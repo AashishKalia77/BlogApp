@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2444ed"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <ProgressBar
+        android:id="@+id/reg_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Create a New Account"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/blogapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:text="Blog App"
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/reg_confirm_pass"
+        android:layout_width="334dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:hint="@string/reg_confirm_pass"/>
+
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="322dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="Create Account"
+        android:textColor="#ffffff"
+        android:textSize="12dp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <Button
+        android:id="@+id/reg_login_button"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/white"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="@string/reg_login_text"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp"
+        tools:layout_editor_absoluteX="-18dp"
+        tools:layout_editor_absoluteY="514dp" />
+
+
+</LinearLayout>
